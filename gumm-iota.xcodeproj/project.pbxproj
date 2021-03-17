@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496FEB2601B2D600319496 /* gumm_iotaApp.swift */; };
+		F5496FEE2601B2D600319496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496FED2601B2D600319496 /* ContentView.swift */; };
+		F5496FF02601B2D800319496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5496FEF2601B2D800319496 /* Assets.xcassets */; };
+		F5496FF32601B2D800319496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5496FF22601B2D800319496 /* Preview Assets.xcassets */; };
+		F5496FFE2601B2D800319496 /* gumm_iotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496FFD2601B2D800319496 /* gumm_iotaTests.swift */; };
+		F54970092601B2D800319496 /* gumm_iotaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970082601B2D800319496 /* gumm_iotaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5496FFA2601B2D800319496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5496FE02601B2D600319496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5496FE72601B2D600319496;
+			remoteInfo = "gumm-iota";
+		};
+		F54970052601B2D800319496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5496FE02601B2D600319496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5496FE72601B2D600319496;
+			remoteInfo = "gumm-iota";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5496FE82601B2D600319496 /* gumm-iota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gumm-iota.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5496FEB2601B2D600319496 /* gumm_iotaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumm_iotaApp.swift; sourceTree = "<group>"; };
+		F5496FED2601B2D600319496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5496FEF2601B2D800319496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5496FF22601B2D800319496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5496FF42601B2D800319496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5496FF92601B2D800319496 /* gumm-iotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gumm-iotaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5496FFD2601B2D800319496 /* gumm_iotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumm_iotaTests.swift; sourceTree = "<group>"; };
+		F5496FFF2601B2D800319496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54970042601B2D800319496 /* gumm-iotaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gumm-iotaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54970082601B2D800319496 /* gumm_iotaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumm_iotaUITests.swift; sourceTree = "<group>"; };
+		F549700A2601B2D800319496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5496FE52601B2D600319496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5496FF62601B2D800319496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54970012601B2D800319496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5496FDF2601B2D600319496 = {
+			isa = PBXGroup;
+			children = (
+				F5496FEA2601B2D600319496 /* gumm-iota */,
+				F5496FFC2601B2D800319496 /* gumm-iotaTests */,
+				F54970072601B2D800319496 /* gumm-iotaUITests */,
+				F5496FE92601B2D600319496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5496FE92601B2D600319496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5496FE82601B2D600319496 /* gumm-iota.app */,
+				F5496FF92601B2D800319496 /* gumm-iotaTests.xctest */,
+				F54970042601B2D800319496 /* gumm-iotaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5496FEA2601B2D600319496 /* gumm-iota */ = {
+			isa = PBXGroup;
+			children = (
+				F5496FEB2601B2D600319496 /* gumm_iotaApp.swift */,
+				F5496FED2601B2D600319496 /* ContentView.swift */,
+				F5496FEF2601B2D800319496 /* Assets.xcassets */,
+				F5496FF42601B2D800319496 /* Info.plist */,
+				F5496FF12601B2D800319496 /* Preview Content */,
+			);
+			path = "gumm-iota";
+			sourceTree = "<group>";
+		};
+		F5496FF12601B2D800319496 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5496FF22601B2D800319496 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5496FFC2601B2D800319496 /* gumm-iotaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5496FFD2601B2D800319496 /* gumm_iotaTests.swift */,
+				F5496FFF2601B2D800319496 /* Info.plist */,
+			);
+			path = "gumm-iotaTests";
+			sourceTree = "<group>";
+		};
+		F54970072601B2D800319496 /* gumm-iotaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F54970082601B2D800319496 /* gumm_iotaUITests.swift */,
+				F549700A2601B2D800319496 /* Info.plist */,
+			);
+			path = "gumm-iotaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5496FE72601B2D600319496 /* gumm-iota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F549700D2601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iota" */;
+			buildPhases = (
+				F5496FE42601B2D600319496 /* Sources */,
+				F5496FE52601B2D600319496 /* Frameworks */,
+				F5496FE62601B2D600319496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gumm-iota";
+			productName = "gumm-iota";
+			productReference = F5496FE82601B2D600319496 /* gumm-iota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5496FF82601B2D800319496 /* gumm-iotaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54970102601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iotaTests" */;
+			buildPhases = (
+				F5496FF52601B2D800319496 /* Sources */,
+				F5496FF62601B2D800319496 /* Frameworks */,
+				F5496FF72601B2D800319496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5496FFB2601B2D800319496 /* PBXTargetDependency */,
+			);
+			name = "gumm-iotaTests";
+			productName = "gumm-iotaTests";
+			productReference = F5496FF92601B2D800319496 /* gumm-iotaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F54970032601B2D800319496 /* gumm-iotaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54970132601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iotaUITests" */;
+			buildPhases = (
+				F54970002601B2D800319496 /* Sources */,
+				F54970012601B2D800319496 /* Frameworks */,
+				F54970022601B2D800319496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F54970062601B2D800319496 /* PBXTargetDependency */,
+			);
+			name = "gumm-iotaUITests";
+			productName = "gumm-iotaUITests";
+			productReference = F54970042601B2D800319496 /* gumm-iotaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5496FE02601B2D600319496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F5496FE72601B2D600319496 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					F5496FF82601B2D800319496 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F5496FE72601B2D600319496;
+					};
+					F54970032601B2D800319496 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F5496FE72601B2D600319496;
+					};
+				};
+			};
+			buildConfigurationList = F5496FE32601B2D600319496 /* Build configuration list for PBXProject "gumm-iota" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5496FDF2601B2D600319496;
+			productRefGroup = F5496FE92601B2D600319496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5496FE72601B2D600319496 /* gumm-iota */,
+				F5496FF82601B2D800319496 /* gumm-iotaTests */,
+				F54970032601B2D800319496 /* gumm-iotaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5496FE62601B2D600319496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5496FF32601B2D800319496 /* Preview Assets.xcassets in Resources */,
+				F5496FF02601B2D800319496 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5496FF72601B2D800319496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54970022601B2D800319496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5496FE42601B2D600319496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5496FEE2601B2D600319496 /* ContentView.swift in Sources */,
+				F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5496FF52601B2D800319496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5496FFE2601B2D800319496 /* gumm_iotaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54970002601B2D800319496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54970092601B2D800319496 /* gumm_iotaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5496FFB2601B2D800319496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5496FE72601B2D600319496 /* gumm-iota */;
+			targetProxy = F5496FFA2601B2D800319496 /* PBXContainerItemProxy */;
+		};
+		F54970062601B2D800319496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5496FE72601B2D600319496 /* gumm-iota */;
+			targetProxy = F54970052601B2D800319496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F549700B2601B2D800319496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F549700C2601B2D800319496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F549700E2601B2D800319496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gumm-iota/Preview Content\"";
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "gumm-iota/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iota";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F549700F2601B2D800319496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gumm-iota/Preview Content\"";
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "gumm-iota/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iota";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F54970112601B2D800319496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				INFOPLIST_FILE = "gumm-iotaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iotaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gumm-iota.app/gumm-iota";
+			};
+			name = Debug;
+		};
+		F54970122601B2D800319496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				INFOPLIST_FILE = "gumm-iotaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iotaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gumm-iota.app/gumm-iota";
+			};
+			name = Release;
+		};
+		F54970142601B2D800319496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				INFOPLIST_FILE = "gumm-iotaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iotaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gumm-iota";
+			};
+			name = Debug;
+		};
+		F54970152601B2D800319496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4D7K3EGJG;
+				INFOPLIST_FILE = "gumm-iotaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benmyers.gumm-iotaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gumm-iota";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5496FE32601B2D600319496 /* Build configuration list for PBXProject "gumm-iota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F549700B2601B2D800319496 /* Debug */,
+				F549700C2601B2D800319496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F549700D2601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F549700E2601B2D800319496 /* Debug */,
+				F549700F2601B2D800319496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54970102601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iotaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54970112601B2D800319496 /* Debug */,
+				F54970122601B2D800319496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54970132601B2D800319496 /* Build configuration list for PBXNativeTarget "gumm-iotaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54970142601B2D800319496 /* Debug */,
+				F54970152601B2D800319496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5496FE02601B2D600319496 /* Project object */;
+}
