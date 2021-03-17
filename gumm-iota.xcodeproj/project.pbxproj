@@ -13,6 +13,11 @@
 		F5496FF32601B2D800319496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5496FF22601B2D800319496 /* Preview Assets.xcassets */; };
 		F5496FFE2601B2D800319496 /* gumm_iotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496FFD2601B2D800319496 /* gumm_iotaTests.swift */; };
 		F54970092601B2D800319496 /* gumm_iotaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970082601B2D800319496 /* gumm_iotaUITests.swift */; };
+		F549701A2601B51500319496 /* StreamerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970192601B51500319496 /* StreamerView.swift */; };
+		F549702E2601B97F00319496 /* StreamComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549702D2601B97F00319496 /* StreamComponents.swift */; };
+		F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549703D2601BA0500319496 /* ComponentGroup.swift */; };
+		F54970462601BAE400319496 /* StreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970452601BAE400319496 /* StreamView.swift */; };
+		F549704E2601BDD800319496 /* ViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549704D2601BDD800319496 /* ViewerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		F54970042601B2D800319496 /* gumm-iotaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gumm-iotaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54970082601B2D800319496 /* gumm_iotaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumm_iotaUITests.swift; sourceTree = "<group>"; };
 		F549700A2601B2D800319496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54970192601B51500319496 /* StreamerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerView.swift; sourceTree = "<group>"; };
+		F549702D2601B97F00319496 /* StreamComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamComponents.swift; sourceTree = "<group>"; };
+		F549703D2601BA0500319496 /* ComponentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGroup.swift; sourceTree = "<group>"; };
+		F54970452601BAE400319496 /* StreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamView.swift; sourceTree = "<group>"; };
+		F549704D2601BDD800319496 /* ViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				F5496FEB2601B2D600319496 /* gumm_iotaApp.swift */,
-				F5496FED2601B2D600319496 /* ContentView.swift */,
+				F549701E2601B51A00319496 /* Views */,
+				F54970332601B98B00319496 /* Components */,
 				F5496FEF2601B2D800319496 /* Assets.xcassets */,
 				F5496FF42601B2D800319496 /* Info.plist */,
 				F5496FF12601B2D800319496 /* Preview Content */,
@@ -128,6 +139,42 @@
 				F549700A2601B2D800319496 /* Info.plist */,
 			);
 			path = "gumm-iotaUITests";
+			sourceTree = "<group>";
+		};
+		F549701E2601B51A00319496 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5496FED2601B2D600319496 /* ContentView.swift */,
+				F54970322601B98400319496 /* Stream */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F54970322601B98400319496 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				F54970452601BAE400319496 /* StreamView.swift */,
+				F54970192601B51500319496 /* StreamerView.swift */,
+				F549704D2601BDD800319496 /* ViewerView.swift */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		F54970332601B98B00319496 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F54970342601B99600319496 /* Component Groups */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F54970342601B99600319496 /* Component Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F549703D2601BA0500319496 /* ComponentGroup.swift */,
+				F549702D2601B97F00319496 /* StreamComponents.swift */,
+			);
+			path = "Component Groups";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +307,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5496FEE2601B2D600319496 /* ContentView.swift in Sources */,
+				F549701A2601B51500319496 /* StreamerView.swift in Sources */,
 				F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */,
+				F549704E2601BDD800319496 /* ViewerView.swift in Sources */,
+				F549702E2601B97F00319496 /* StreamComponents.swift in Sources */,
+				F54970462601BAE400319496 /* StreamView.swift in Sources */,
+				F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
