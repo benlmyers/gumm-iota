@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+/**
+ A protocol for views relating to the stream interface.
+ 
+ This protocol is the superview of:
+ 
+ - `StreamerView`, and
+ - `ViewerView`.
+ */
 protocol StreamView: View {
   
   func exit()

@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+/**
+ The streamer side of `StreamView`.
+ 
+ Users can choose to start a stream, or watch someone else's stream. This view manages the streamer side of things.
+ 
+ # See Also
+ - `StreamView`
+ - `ViewerView`
+ */
 struct StreamerView: StreamView {
   
   typealias Components = StreamComponents<ViewerView>

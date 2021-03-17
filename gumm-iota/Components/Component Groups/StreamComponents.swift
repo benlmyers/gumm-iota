@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ A `ComponentGroup` for views that conform to `StreamView`.
+ */
 struct StreamComponents<ViewCategory: StreamView>: ComponentGroup {
   
   typealias ForView = ViewCategory
