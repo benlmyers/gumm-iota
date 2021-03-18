@@ -12,11 +12,12 @@ struct EmojiWidget: Widget {
   // MARK: - Public Properties
   
   public var size = (1, 1)
+  public var emoji: String = "😀"
   
   // MARK: - Body View
   
   public var body: some View {
-    Text("😀")
+    Text(emoji)
       .font(.title2)
   }
   

@@ -15,7 +15,7 @@ struct CameraRollWidget: Widget {
   
   public var size = (2, 2)
   
-  // MARK: - Bodt View
+  // MARK: - Body View
   
   public var body: some View {
     Image("Sample_Image")

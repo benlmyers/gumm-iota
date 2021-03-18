@@ -20,6 +20,7 @@
 		F549704E2601BDD800319496 /* ViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549704D2601BDD800319496 /* ViewerView.swift */; };
 		F54B117826037B4500D7B71B /* EmojiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B117726037B4500D7B71B /* EmojiWidget.swift */; };
 		F5530AD2260304D400534BF4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5530AD1260304D400534BF4 /* View.swift */; };
+		F566260426037FF400E8DDE8 /* TwoPollWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566260326037FF400E8DDE8 /* TwoPollWidget.swift */; };
 		F58DB31C26037C73002AB60D /* CameraRollWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DB31B26037C73002AB60D /* CameraRollWidget.swift */; };
 		F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC702602E70C0015C8F8 /* Theme.swift */; };
 		F5B7FC762602E7A50015C8F8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC752602E7A50015C8F8 /* Global.swift */; };
@@ -69,6 +70,7 @@
 		F549704D2601BDD800319496 /* ViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerView.swift; sourceTree = "<group>"; };
 		F54B117726037B4500D7B71B /* EmojiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidget.swift; sourceTree = "<group>"; };
 		F5530AD1260304D400534BF4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F566260326037FF400E8DDE8 /* TwoPollWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPollWidget.swift; sourceTree = "<group>"; };
 		F58DB31B26037C73002AB60D /* CameraRollWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollWidget.swift; sourceTree = "<group>"; };
 		F5B7FC702602E70C0015C8F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F5B7FC752602E7A50015C8F8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				F54B117726037B4500D7B71B /* EmojiWidget.swift */,
 				F58DB31B26037C73002AB60D /* CameraRollWidget.swift */,
+				F566260326037FF400E8DDE8 /* TwoPollWidget.swift */,
 			);
 			path = "Widget Types";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			files = (
 				F5530AD2260304D400534BF4 /* View.swift in Sources */,
 				F5496FEE2601B2D600319496 /* ContentView.swift in Sources */,
+				F566260426037FF400E8DDE8 /* TwoPollWidget.swift in Sources */,
 				F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */,
 				F5B7FCB52602FFB30015C8F8 /* Widget.swift in Sources */,
 				F5B7FCAD2602FC0E0015C8F8 /* WidgetContainerView.swift in Sources */,

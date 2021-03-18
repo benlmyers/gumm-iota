@@ -18,6 +18,7 @@ struct WidgetContainerView<T: Widget>: View {
   // MARK: - Public Properties
   
   public var widget: T
+  public var fixed: Bool = false
   
   // MARK: - Private Properties
   
@@ -29,8 +30,14 @@ struct WidgetContainerView<T: Widget>: View {
   
   // MARK: - Initalizers
   
-  public init(widget: T) {
+  public init(fixWidget widget: T) {
     self.widget = widget
+    self.fixed = true
+  }
+  
+  public init(freeWidget widget: T) {
+    self.widget = widget
+    self.fixed = false
   }
   
   // MARK: - Body View

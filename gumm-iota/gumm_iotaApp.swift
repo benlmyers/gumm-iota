@@ -12,13 +12,14 @@ import PartialSheet
 struct gumm_iotaApp: App {
   
   private let global = Global()
-  private let sheetManager: PartialSheetManager = PartialSheetManager()
+  private let sheetManager = PartialSheetManager()
   
   var body: some Scene {
     WindowGroup {
       ContentView()
-        .environmentObject(global)
         .environmentObject(sheetManager)
+        .environmentObject(global)
+        
     }
   }
 }

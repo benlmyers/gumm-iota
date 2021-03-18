@@ -11,20 +11,25 @@ import SwiftUI
  The toolbox holds all of the streamer's available Widgets.
  */
 struct ToolboxView: View {
+  
+  typealias Theme = ClassicTheme
+  
+  // MARK: - Body View
+  
   var body: some View {
     VStack(alignment: .leading) {
       Text("Favorites")
         .font(.title2)
         .fontWeight(.heavy)
-      ScrollView(.horizontal) {
-        HStack(spacing: 10.0) {
-          WidgetContainerView(widget: EmojiWidget())
-          WidgetContainerView(widget: EmojiWidget())
-          WidgetContainerView(widget: EmojiWidget())
+      ScrollView(.horizontal, showsIndicators: false) {
+        HStack(alignment: .top, spacing: 10.0) {
+          WidgetContainerView(fixWidget: EmojiWidget())
+          WidgetContainerView(fixWidget: CameraRollWidget())
+          WidgetContainerView(fixWidget: TwoPollWidget())
         }
       }
-      
     }
+    .foregroundColor(Theme.foreground)
     .padding()
   }
 }
