@@ -12,7 +12,20 @@ import SwiftUI
  */
 struct ToolboxView: View {
   var body: some View {
-    Text("Toolbox")
+    VStack(alignment: .leading) {
+      Text("Favorites")
+        .font(.title2)
+        .fontWeight(.heavy)
+      ScrollView(.horizontal) {
+        HStack(spacing: 10.0) {
+          WidgetContainerView(size: (1, 1))
+          WidgetContainerView(size: (3, 2))
+          WidgetContainerView(size: (2, 1))
+        }
+      }
+      
+    }
+    .padding()
   }
 }
 
