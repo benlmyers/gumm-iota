@@ -13,7 +13,7 @@ struct TwoPollWidget: Widget {
   
   // MARK: - Public Properties
   
-  public var size = (3, 2)
+  public var size = (3, 1)
   public var question: String = "Do you like coding?"
   public var option1: String = "Yes"
   public var option2: String = "No"
@@ -27,11 +27,13 @@ struct TwoPollWidget: Widget {
   
   public var body: some View {
     GeometryReader { proxy in
-      VStack {
+      VStack(spacing: 0.0) {
         questionLabel
         Spacer()
+        optionsLabel
         barView(proxy)
       }
+      .font(.caption)
     }
     .padding(5.0)
   }
@@ -42,17 +44,32 @@ struct TwoPollWidget: Widget {
     Label(question, systemImage: "questionmark.circle.fill")
   }
   
+  private var optionsLabel: some View {
+    HStack {
+      Text(option1)
+        .fontWeight(.bold)
+      Spacer()
+      Text(option2)
+        .fontWeight(.bold)
+    }
+    .font(.system(size: 9.0))
+    .padding(.horizontal, 4.0)
+  }
+  
   private func barView(_ proxy: GeometryProxy) -> some View {
     HStack(spacing: 0.0) {
       VStack(alignment: .leading) {
-        Text(option1)
+        Text(percentages().0)
+          .fontWeight(.bold)
       }
       .modifier(BarViewModifier(width: widthBar1(proxy), background: Theme.accent, barHeight: barHeight))
-      VStack(alignment: .leading) {
-        Text(option2)
+      VStack(alignment: .trailing) {
+        Text(percentages().1)
+          .fontWeight(.bold)
       }
       .modifier(BarViewModifier(width: widthBar2(proxy), background: Theme.accent2, barHeight: barHeight))
     }
+    .cornerRadius(5.0)
   }
   
   // MARK: - Supporting View Modifiers
@@ -79,6 +96,12 @@ struct TwoPollWidget: Widget {
   
   private func widthBar2(_ proxy: GeometryProxy) -> CGFloat {
     return CGFloat(1.0 - ratio) * containerWidth(proxy)
+  }
+  
+  private func percentages() -> (String, String) {
+    let ratio1 = ratio, ratio2 = 1 - ratio
+    let percent1 = Int(ratio1 * 100.0), percent2 = Int(ratio2 * 100.0)
+    return ("\(percent1)%", "\(percent2)%")
   }
   
   private func containerWidth(_ proxy: GeometryProxy) -> CGFloat {

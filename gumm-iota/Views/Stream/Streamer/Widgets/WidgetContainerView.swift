@@ -22,7 +22,7 @@ struct WidgetContainerView<T: Widget>: View {
   
   // MARK: - Private Properties
   
-  fileprivate var unitLength: CGFloat = 60.0
+  fileprivate var unitLength: CGFloat = 65.0
   
   private var frameSize: CGSize {
     return CGSize(width: unitLength * CGFloat(widget.size.0), height: unitLength * CGFloat(widget.size.1))
