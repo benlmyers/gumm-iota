@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 /**
  The streamer side of `StreamView`.
@@ -19,10 +20,12 @@ import SwiftUI
 struct StreamerView: StreamView {
   
   typealias Components = StreamComponents<StreamerView>
+  typealias Theme = ClassicTheme
   
   // MARK: - Wrapped Properties
   
   @Binding public var show: Bool
+  @State private var showToolbox: Bool = false
   
   // MARK: - Internal Properties
   
@@ -36,6 +39,25 @@ struct StreamerView: StreamView {
         Components.topBar(endAction: exit, settingsAction: settings, viewerCount: viewerCount)
       }
       Spacer()
+      HStack {
+        Spacer()
+        toolboxButton
+      }
+      .padding(24)
+      .foregroundColor(Theme.foreground)
+    }
+    .addPartialSheet(style: .defaultStyle())
+  }
+  
+  // MARK: - Supporting Views
+  
+  private var toolboxButton: some View {
+    Button(action: toolbox) {
+      Image(systemName: "square.grid.2x2")
+        .imageScale(.large)
+    }
+    .partialSheet(isPresented: $showToolbox) {
+      ToolboxView()
     }
   }
   
@@ -45,8 +67,14 @@ struct StreamerView: StreamView {
     show = false
   }
   
-  internal func settings() {
+  // MARK: - Private Methods
+  
+  private func settings() {
     // (open settings page)
+  }
+  
+  private func toolbox() {
+    showToolbox.toggle()
   }
   
 }

@@ -37,8 +37,6 @@ struct ViewerView: StreamView {
       }
       Spacer()
     }
-    .edgesIgnoringSafeArea(.top)
-    .padding()
   }
   
   // MARK: - Internal Methods

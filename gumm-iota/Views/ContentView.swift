@@ -18,7 +18,7 @@ struct ContentView: View {
   // MARK: - Body View
   
   var body: some View {
-    VStack {
+    VStack(spacing: 20.0) {
       Button(action: handleOpenStreamerTapped) {
         Text("Open Streamer")
           .fullScreenCover(isPresented: $presentStreamerView, content: { StreamerView(show: $presentStreamerView) })
@@ -41,6 +41,8 @@ struct ContentView: View {
     presentViewerView.toggle()
   }
 }
+
+// MARK: -
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {

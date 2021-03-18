@@ -66,6 +66,7 @@ struct StreamComponents<ViewInCategory: StreamView>: ComponentGroup {
   
   internal static func viewerCounter(count: Int) -> some View {
     Label("\(count)", systemImage: "person.fill")
+      .imageScale(.small)
   }
   
 }

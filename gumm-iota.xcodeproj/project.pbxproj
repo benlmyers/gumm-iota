@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		F5B7FC7C2602E82D0015C8F8 /* ClassicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */; };
 		F5B7FC8C2602F04E0015C8F8 /* ModifierGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */; };
 		F5B7FC942602F07A0015C8F8 /* StreamModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */; };
+		F5B7FC9A2602F89A0015C8F8 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = F5B7FC992602F89A0015C8F8 /* PartialSheet */; };
+		F5B7FCA42602F9C40015C8F8 /* ToolboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 		F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTheme.swift; sourceTree = "<group>"; };
 		F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierGroup.swift; sourceTree = "<group>"; };
 		F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModifiers.swift; sourceTree = "<group>"; };
+		F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolboxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B7FC9A2602F89A0015C8F8 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				F54970452601BAE400319496 /* StreamView.swift */,
-				F54970192601B51500319496 /* StreamerView.swift */,
-				F549704D2601BDD800319496 /* ViewerView.swift */,
+				F5B7FC9E2602F9B50015C8F8 /* Streamer */,
+				F5B7FC9F2602F9BA0015C8F8 /* Viewer */,
 			);
 			path = Stream;
 			sourceTree = "<group>";
@@ -224,6 +228,23 @@
 			path = "View Modifier Groups";
 			sourceTree = "<group>";
 		};
+		F5B7FC9E2602F9B50015C8F8 /* Streamer */ = {
+			isa = PBXGroup;
+			children = (
+				F54970192601B51500319496 /* StreamerView.swift */,
+				F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */,
+			);
+			path = Streamer;
+			sourceTree = "<group>";
+		};
+		F5B7FC9F2602F9BA0015C8F8 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F549704D2601BDD800319496 /* ViewerView.swift */,
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +261,9 @@
 			dependencies = (
 			);
 			name = "gumm-iota";
+			packageProductDependencies = (
+				F5B7FC992602F89A0015C8F8 /* PartialSheet */,
+			);
 			productName = "gumm-iota";
 			productReference = F5496FE82601B2D600319496 /* gumm-iota.app */;
 			productType = "com.apple.product-type.application";
@@ -311,6 +335,9 @@
 				Base,
 			);
 			mainGroup = F5496FDF2601B2D600319496;
+			packageReferences = (
+				F5B7FC982602F89A0015C8F8 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = F5496FE92601B2D600319496 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,6 +391,7 @@
 				F54970462601BAE400319496 /* StreamView.swift in Sources */,
 				F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */,
 				F5B7FC762602E7A50015C8F8 /* Global.swift in Sources */,
+				F5B7FCA42602F9C40015C8F8 /* ToolboxView.swift in Sources */,
 				F5B7FC8C2602F04E0015C8F8 /* ModifierGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5B7FC982602F89A0015C8F8 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5B7FC992602F89A0015C8F8 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5B7FC982602F89A0015C8F8 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5496FE02601B2D600319496 /* Project object */;
 }
