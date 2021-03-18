@@ -10,12 +10,12 @@ import SwiftUI
 /**
  A `ComponentGroup` for views that conform to `StreamView`.
  */
-struct StreamComponents<ViewCategory: StreamView>: ComponentGroup {
+struct StreamComponents<ViewInCategory: StreamView>: ComponentGroup {
   
-  typealias ForView = ViewCategory
+  typealias ForView = ViewInCategory
   typealias Theme = ClassicTheme
   
-  // MARK: - Supporting Components
+  // MARK: - Aggregate Components
   
   /**
    The top bar component.
@@ -50,7 +50,7 @@ struct StreamComponents<ViewCategory: StreamView>: ComponentGroup {
     .edgesIgnoringSafeArea(.top)
   }
   
-  // MARK: - Private Components
+  // MARK: - Subcomponents
   
   private static func endButton(action: @escaping () -> Void) -> some View {
     Button(action: action) {

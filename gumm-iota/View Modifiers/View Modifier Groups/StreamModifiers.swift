@@ -10,9 +10,9 @@ import SwiftUI
 /**
  A `ComponentGroup` for views that conform to `StreamView`.
  */
-struct StreamModifiers<ViewCategory: StreamView>: ModifierGroup {
+struct StreamModifiers<ViewInCategory: StreamView>: ModifierGroup {
   
-  typealias ForView = ViewCategory
+  typealias ForView = ViewInCategory
   typealias Theme = ClassicTheme
   
 }
