@@ -18,9 +18,9 @@ struct ToolboxView: View {
         .fontWeight(.heavy)
       ScrollView(.horizontal) {
         HStack(spacing: 10.0) {
-          WidgetContainerView(size: (1, 1))
-          WidgetContainerView(size: (3, 2))
-          WidgetContainerView(size: (2, 1))
+          WidgetContainerView(widget: EmojiWidget())
+          WidgetContainerView(widget: EmojiWidget())
+          WidgetContainerView(widget: EmojiWidget())
         }
       }
       

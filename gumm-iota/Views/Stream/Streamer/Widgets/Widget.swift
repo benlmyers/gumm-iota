@@ -9,6 +9,8 @@ import SwiftUI
 
 protocol Widget: View {
   
+  typealias WidgetSize = (Int, Int)
   
+  var size: WidgetSize { get }
   
 }

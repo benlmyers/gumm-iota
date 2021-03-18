@@ -18,7 +18,9 @@
 		F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549703D2601BA0500319496 /* ComponentGroup.swift */; };
 		F54970462601BAE400319496 /* StreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970452601BAE400319496 /* StreamView.swift */; };
 		F549704E2601BDD800319496 /* ViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549704D2601BDD800319496 /* ViewerView.swift */; };
+		F54B117826037B4500D7B71B /* EmojiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B117726037B4500D7B71B /* EmojiWidget.swift */; };
 		F5530AD2260304D400534BF4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5530AD1260304D400534BF4 /* View.swift */; };
+		F58DB31C26037C73002AB60D /* CameraRollWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DB31B26037C73002AB60D /* CameraRollWidget.swift */; };
 		F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC702602E70C0015C8F8 /* Theme.swift */; };
 		F5B7FC762602E7A50015C8F8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC752602E7A50015C8F8 /* Global.swift */; };
 		F5B7FC7C2602E82D0015C8F8 /* ClassicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */; };
@@ -65,7 +67,9 @@
 		F549703D2601BA0500319496 /* ComponentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGroup.swift; sourceTree = "<group>"; };
 		F54970452601BAE400319496 /* StreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamView.swift; sourceTree = "<group>"; };
 		F549704D2601BDD800319496 /* ViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerView.swift; sourceTree = "<group>"; };
+		F54B117726037B4500D7B71B /* EmojiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidget.swift; sourceTree = "<group>"; };
 		F5530AD1260304D400534BF4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F58DB31B26037C73002AB60D /* CameraRollWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollWidget.swift; sourceTree = "<group>"; };
 		F5B7FC702602E70C0015C8F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F5B7FC752602E7A50015C8F8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTheme.swift; sourceTree = "<group>"; };
@@ -208,6 +212,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F58DB32026037E81002AB60D /* Widget Types */ = {
+			isa = PBXGroup;
+			children = (
+				F54B117726037B4500D7B71B /* EmojiWidget.swift */,
+				F58DB31B26037C73002AB60D /* CameraRollWidget.swift */,
+			);
+			path = "Widget Types";
+			sourceTree = "<group>";
+		};
 		F5B7FC6F2602E6F90015C8F8 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				F54970192601B51500319496 /* StreamerView.swift */,
+				F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */,
 				F5B7FCA82602FBFB0015C8F8 /* Widgets */,
 			);
 			path = Streamer;
@@ -263,9 +277,9 @@
 		F5B7FCA82602FBFB0015C8F8 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */,
-				F5B7FCB42602FFB30015C8F8 /* Widget.swift */,
 				F5B7FCAC2602FC0E0015C8F8 /* WidgetContainerView.swift */,
+				F5B7FCB42602FFB30015C8F8 /* Widget.swift */,
+				F58DB32026037E81002AB60D /* Widget Types */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -410,11 +424,13 @@
 				F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */,
 				F5B7FCB52602FFB30015C8F8 /* Widget.swift in Sources */,
 				F5B7FCAD2602FC0E0015C8F8 /* WidgetContainerView.swift in Sources */,
+				F54B117826037B4500D7B71B /* EmojiWidget.swift in Sources */,
 				F549701A2601B51500319496 /* StreamerView.swift in Sources */,
 				F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */,
 				F549704E2601BDD800319496 /* ViewerView.swift in Sources */,
 				F5B7FC7C2602E82D0015C8F8 /* ClassicTheme.swift in Sources */,
 				F5B7FC942602F07A0015C8F8 /* StreamModifiers.swift in Sources */,
+				F58DB31C26037C73002AB60D /* CameraRollWidget.swift in Sources */,
 				F549702E2601B97F00319496 /* StreamComponents.swift in Sources */,
 				F54970462601BAE400319496 /* StreamView.swift in Sources */,
 				F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */,
