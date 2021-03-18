@@ -18,6 +18,11 @@
 		F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549703D2601BA0500319496 /* ComponentGroup.swift */; };
 		F54970462601BAE400319496 /* StreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54970452601BAE400319496 /* StreamView.swift */; };
 		F549704E2601BDD800319496 /* ViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549704D2601BDD800319496 /* ViewerView.swift */; };
+		F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC702602E70C0015C8F8 /* Theme.swift */; };
+		F5B7FC762602E7A50015C8F8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC752602E7A50015C8F8 /* Global.swift */; };
+		F5B7FC7C2602E82D0015C8F8 /* ClassicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */; };
+		F5B7FC8C2602F04E0015C8F8 /* ModifierGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */; };
+		F5B7FC942602F07A0015C8F8 /* StreamModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		F549703D2601BA0500319496 /* ComponentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGroup.swift; sourceTree = "<group>"; };
 		F54970452601BAE400319496 /* StreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamView.swift; sourceTree = "<group>"; };
 		F549704D2601BDD800319496 /* ViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerView.swift; sourceTree = "<group>"; };
+		F5B7FC702602E70C0015C8F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F5B7FC752602E7A50015C8F8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTheme.swift; sourceTree = "<group>"; };
+		F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierGroup.swift; sourceTree = "<group>"; };
+		F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				F5496FEB2601B2D600319496 /* gumm_iotaApp.swift */,
+				F5B7FC6F2602E6F90015C8F8 /* App */,
 				F549701E2601B51A00319496 /* Views */,
 				F54970332601B98B00319496 /* Components */,
+				F5B7FC892602F0330015C8F8 /* View Modifiers */,
 				F5496FEF2601B2D800319496 /* Assets.xcassets */,
 				F5496FF42601B2D800319496 /* Info.plist */,
 				F5496FF12601B2D800319496 /* Preview Content */,
@@ -175,6 +187,41 @@
 				F549702D2601B97F00319496 /* StreamComponents.swift */,
 			);
 			path = "Component Groups";
+			sourceTree = "<group>";
+		};
+		F5B7FC6F2602E6F90015C8F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7FC752602E7A50015C8F8 /* Global.swift */,
+				F5B7FC7A2602E8200015C8F8 /* Themes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5B7FC7A2602E8200015C8F8 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7FC702602E70C0015C8F8 /* Theme.swift */,
+				F5B7FC7B2602E82D0015C8F8 /* ClassicTheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		F5B7FC892602F0330015C8F8 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7FC8A2602F03D0015C8F8 /* View Modifier Groups */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		F5B7FC8A2602F03D0015C8F8 /* View Modifier Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */,
+				F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */,
+			);
+			path = "View Modifier Groups";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +354,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5496FEE2601B2D600319496 /* ContentView.swift in Sources */,
+				F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */,
 				F549701A2601B51500319496 /* StreamerView.swift in Sources */,
 				F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */,
 				F549704E2601BDD800319496 /* ViewerView.swift in Sources */,
+				F5B7FC7C2602E82D0015C8F8 /* ClassicTheme.swift in Sources */,
+				F5B7FC942602F07A0015C8F8 /* StreamModifiers.swift in Sources */,
 				F549702E2601B97F00319496 /* StreamComponents.swift in Sources */,
 				F54970462601BAE400319496 /* StreamView.swift in Sources */,
 				F549703E2601BA0500319496 /* ComponentGroup.swift in Sources */,
+				F5B7FC762602E7A50015C8F8 /* Global.swift in Sources */,
+				F5B7FC8C2602F04E0015C8F8 /* ModifierGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

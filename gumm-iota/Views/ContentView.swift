@@ -11,6 +11,7 @@ struct ContentView: View {
   
   // MARK: - Wrapped Properties
   
+  @Environment(\.colorScheme) private var colorScheme
   @State private var presentStreamerView: Bool = false
   @State private var presentViewerView: Bool = false
   
@@ -27,6 +28,7 @@ struct ContentView: View {
           .fullScreenCover(isPresented: $presentViewerView, content: { ViewerView(show: $presentViewerView) })
       }
     }
+    .statusBar(hidden: true)
   }
   
   // MARK: - Private Methods

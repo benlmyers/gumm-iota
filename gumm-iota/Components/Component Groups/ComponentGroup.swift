@@ -15,5 +15,6 @@ import SwiftUI
 protocol ComponentGroup {
   
   associatedtype ForView
+  associatedtype Theme
   
 }

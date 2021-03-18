@@ -18,18 +18,24 @@ import SwiftUI
  */
 struct StreamerView: StreamView {
   
-  typealias Components = StreamComponents<ViewerView>
+  typealias Components = StreamComponents<StreamerView>
   
   // MARK: - Wrapped Properties
   
   @Binding public var show: Bool
   
+  // MARK: - Internal Properties
+  
+  internal var viewerCount: Int = 16
+  
   // MARK: - Body View
   
   var body: some View {
     VStack {
-      Text("This is the streamer view")
-      Components.endButton(action: exit)
+      HStack {
+        Components.topBar(endAction: exit, settingsAction: settings, viewerCount: viewerCount)
+      }
+      Spacer()
     }
   }
   
@@ -39,7 +45,13 @@ struct StreamerView: StreamView {
     show = false
   }
   
+  internal func settings() {
+    // (open settings page)
+  }
+  
 }
+
+// MARK: -
 
 struct StreamerView_Previews: PreviewProvider {
   static var previews: some View {

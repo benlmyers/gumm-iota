@@ -24,13 +24,21 @@ struct ViewerView: StreamView {
   
   @Binding public var show: Bool
   
+  // MARK: - Internal Properties
+  
+  internal var viewerCount: Int = 16
+  
   // MARK: - Body View
   
   var body: some View {
     VStack {
-      Text("This is the viewer view")
-      Components.endButton(action: exit)
+      HStack {
+        Components.topBar(endAction: exit, viewerCount: viewerCount)
+      }
+      Spacer()
     }
+    .edgesIgnoringSafeArea(.top)
+    .padding()
   }
   
   // MARK: - Internal Methods
@@ -40,6 +48,8 @@ struct ViewerView: StreamView {
   }
   
 }
+
+// MARK: -
 
 struct ViewerView_Previews: PreviewProvider {
   static var previews: some View {

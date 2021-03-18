@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct gumm_iotaApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  private let global = Global()
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(global)
     }
+  }
 }

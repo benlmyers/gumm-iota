@@ -13,16 +13,18 @@ import SwiftUI
 struct StreamComponents<ViewCategory: StreamView>: ComponentGroup {
   
   typealias ForView = ViewCategory
+  typealias Theme = ClassicTheme
   
   // MARK: - Supporting Components
   
   /**
-   The top bar components.
+   The top bar component.
    
-   The top bar components include the:
+   The top bar component include the:
    - end button,
    - settings button (streamer only), and the
-   - viewer count.
+   - viewer count
+   subcomponents.
    
    On iPhone X and newer, these components will appear next to the notch. On older models, they will appear in the top-left and top-right corners of the screeen.
    
@@ -32,20 +34,25 @@ struct StreamComponents<ViewCategory: StreamView>: ComponentGroup {
    */
   public static func topBar(
     endAction: @escaping () -> Void,
-    settingsAction: @escaping () -> Void,
+    settingsAction: (() -> Void)? = nil,
     viewerCount: Int
   ) -> some View {
-    HStack {
+    HStack(spacing: 16.0) {
       viewerCounter(count: viewerCount)
       Spacer()
-      if ForView.self == StreamerView.self { settingsButton(action: settingsAction) }
+      if ForView.self == StreamerView.self, let action = settingsAction { settingsButton(action: action) }
       endButton(action: endAction)
     }
+    .font(.title3)
+    .foregroundColor(Theme.foreground)
+    .padding(.vertical, 12)
+    .padding(.horizontal, 32)
+    .edgesIgnoringSafeArea(.top)
   }
   
-  // MARK: - Internal Components
+  // MARK: - Private Components
   
-  internal static func endButton(action: @escaping () -> Void) -> some View {
+  private static func endButton(action: @escaping () -> Void) -> some View {
     Button(action: action) {
       Image(systemName: "xmark")
     }

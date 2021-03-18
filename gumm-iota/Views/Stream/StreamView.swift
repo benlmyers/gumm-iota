@@ -19,4 +19,6 @@ protocol StreamView: View {
   
   func exit()
   
+  var viewerCount: Int { get }
+  
 }
