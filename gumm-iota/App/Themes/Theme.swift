@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ A defined set of colors to use within the app.
+ */
 protocol Theme {
   
   /// The active color scheme

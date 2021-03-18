@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ Gumm's default theme.
+ */
 struct ClassicTheme: Theme {
   
   public static var colorScheme: ColorScheme = .dark

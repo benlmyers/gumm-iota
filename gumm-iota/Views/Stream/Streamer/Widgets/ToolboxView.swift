@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ The toolbox holds all of the streamer's available Widgets.
+ */
 struct ToolboxView: View {
   var body: some View {
     Text("Toolbox")

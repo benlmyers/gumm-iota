@@ -1,0 +1,25 @@
+//
+//  WidgetContainerView.swift
+//  gumm-iota
+//
+//  Created by Ben Myers on 3/17/21.
+//
+
+import SwiftUI
+
+/**
+ The Widget Container is the view that determines the size and shape of a certain Widget.
+ */
+struct WidgetContainerView: View {
+  var body: some View {
+    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  }
+}
+
+// MARK: -
+
+struct WidgetView_Previews: PreviewProvider {
+  static var previews: some View {
+    WidgetContainerView()
+  }
+}

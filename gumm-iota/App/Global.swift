@@ -8,7 +8,4 @@
 import SwiftUI
 
 class Global: ObservableObject {
-  
-  
-  
 }

@@ -25,6 +25,7 @@
 		F5B7FC942602F07A0015C8F8 /* StreamModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */; };
 		F5B7FC9A2602F89A0015C8F8 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = F5B7FC992602F89A0015C8F8 /* PartialSheet */; };
 		F5B7FCA42602F9C40015C8F8 /* ToolboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */; };
+		F5B7FCAD2602FC0E0015C8F8 /* WidgetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7FCAC2602FC0E0015C8F8 /* WidgetContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F5B7FC8B2602F04E0015C8F8 /* ModifierGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierGroup.swift; sourceTree = "<group>"; };
 		F5B7FC932602F07A0015C8F8 /* StreamModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModifiers.swift; sourceTree = "<group>"; };
 		F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolboxView.swift; sourceTree = "<group>"; };
+		F5B7FCAC2602FC0E0015C8F8 /* WidgetContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				F54970192601B51500319496 /* StreamerView.swift */,
-				F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */,
+				F5B7FCA82602FBFB0015C8F8 /* Widgets */,
 			);
 			path = Streamer;
 			sourceTree = "<group>";
@@ -243,6 +245,15 @@
 				F549704D2601BDD800319496 /* ViewerView.swift */,
 			);
 			path = Viewer;
+			sourceTree = "<group>";
+		};
+		F5B7FCA82602FBFB0015C8F8 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7FCA32602F9C40015C8F8 /* ToolboxView.swift */,
+				F5B7FCAC2602FC0E0015C8F8 /* WidgetContainerView.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 			files = (
 				F5496FEE2601B2D600319496 /* ContentView.swift in Sources */,
 				F5B7FC712602E70C0015C8F8 /* Theme.swift in Sources */,
+				F5B7FCAD2602FC0E0015C8F8 /* WidgetContainerView.swift in Sources */,
 				F549701A2601B51500319496 /* StreamerView.swift in Sources */,
 				F5496FEC2601B2D600319496 /* gumm_iotaApp.swift in Sources */,
 				F549704E2601BDD800319496 /* ViewerView.swift in Sources */,
